@@ -1,0 +1,43 @@
+<% include partials/header%>
+
+
+
+<style>
+.center{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 75%;
+}
+</style>
+<div class="container">
+    <header class="jumbotron">
+        <div class="container">
+            <h1>CampGrounds</h1>
+            <p>View our campgrounds from all over the world</p>
+            <p>
+                <a class="btn btn-primary btn-lg" href="/campgrounds/new"> Add a new CampGround</a>
+            </p>
+        </div>
+    </header>
+
+
+    <div class="row text-center" style="display:flex; flex-wrap: wrap;">
+        <% cg.forEach(function(camp){ %>
+            <div class="col-md-3 col-sm-6">
+                <div class="img-thumbnail">
+                    <img src = "<%= camp.image %>" class="center" >
+
+                    <div class="caption">
+                        <h4><%= camp.name%></h4>
+                    </div>   
+                </div>
+            </div>
+        <% }) %>
+
+    </div>
+
+</div>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+<% include partials/footer%>
+

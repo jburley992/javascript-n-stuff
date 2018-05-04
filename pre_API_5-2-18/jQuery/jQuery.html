@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+
+    <head>
+        <title></title>
+        <script type="text/javascript" src="lib/jquery-3.3.1.min.js"></script>
+    </head>
+    <body>
+        <h1>This is an h1 used for learning jQuery</h1>
+        <h3>Languages</h3>
+        <ul>
+            <li>Python</li>
+            <li>javascript</li>
+            <li>C++</li>
+            <li>html</li>
+            <li>css</li>
+        </ul>
+        
+        
+
+        <h3>Common jQuery methods</h3>
+        <ul>
+            <!-- api.jquery.com -->
+            <li>css(attr_to_change,new_value)</li>
+            <li>val("none")</li>
+            <!-- jQuery wrapper for value:
+            Can be used to get text from an input box
+             -->
+            <li>text("non-html string") --- jQuery version of textContent</li>
+            <li>attr(attr_to_change, new_value)</li>
+            <!-- retrieve and set attributes (src,href,etc.)
+            getter/setter paradigm, think pass by reference in maps -->
+            <li>html("HTML string") --- jQuery version of innerHTML</li>
+            <!-- You can change actual html code with
+             this method -->
+
+             <!-- Basically the same as the methods  highlighted in
+            dom_manip.js -->
+            <li>addClass("css_class")</li>
+            <li>removeClass"css_class"()</li>
+            <li>toggleClass("css_class")</li>
+            <li>click("function") --- Will <strong> addEventListener </strong>, takes a 
+            function as an argument</li>
+            <!-- Can use $(this) as a  replacement for
+            "this", when using jQuery events instead of standard
+            js events -->
+            <li>keypress("function(event)")--- event is an object passed 
+                into a keypress function that stores data, such as what key was
+                presed or ifthe shiftkey was pressed, etc.
+            </li>
+
+            <li>on("eventType","function") --- basically the best because we can give
+                it both an eventtype and function, it is the jQuery version of
+                addEventListener
+            </li>
+        </ul>
+        <script src="jQuery.js"> </script>
+        
+    </body>
+</html>

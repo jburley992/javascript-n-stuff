@@ -1,0 +1,61 @@
+.square{
+    width: 30%;
+    color: blue;
+    background-color: black;
+    padding-bottom: 30%;
+    float: right;
+    margin: 1.66%;
+    border-radius: 100%;
+    transition: background-color 0.3s;
+}
+
+body{
+    margin: 0;
+    background-color: #232323;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+
+#container{
+    max-width: 60%;
+    max-height: 90%;
+    margin: auto;
+}
+
+h1{
+    color: rgb(59, 57, 57);
+    margin: 0;
+    text-align: center;
+    text-transform: uppercase;    
+    background-color: springgreen;
+    
+}
+
+#menu{
+    text-align: center;
+    font-size: large;
+    background-color: white;
+}
+
+
+button{
+    border: none;
+    background: none;
+    text-transform: uppercase;
+    height: 100%;
+    font-weight: 700;
+    color: steelblue;
+    letter-spacing: 1px;
+    font-size: inherit;
+    transition: all 0.2s;
+
+}
+
+button:hover{
+    color: white;
+    background: steelblue;
+}
+
+#advice{
+    display: inline-block;
+    width: 20%;
+}

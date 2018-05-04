@@ -1,0 +1,11 @@
+Querystring: has no spaces, sends data to backend, is used for when the backend expects some type of data
+ex. ?"q=Cats&city=AnnArbor&something=etc"
+
+Requests: Get, Post, Delete, Put, Patch
+
+HTTPS: This is a protocol, and it defines what should happen when a request is made.
+
+Root Path: On a server, a "/" get request indicates that a user has accessed your root path,
+ideally a root path should be your homepage.
+
+Angular JS: https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.js

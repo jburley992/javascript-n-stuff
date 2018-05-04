@@ -1,0 +1,16 @@
+<% include partials/header%>
+<h1>Friends List goes here</h1>
+
+<% friends.forEach(function(friend){ %>
+    <li>My friend is <%=friend %></li>
+<% } )%>
+<!--Action Should always contain the route that we want, method should
+Contain the type of action we are performing  -->
+<form action="/addFriend" method="POST">
+<input type="text" name="newFriend" placeholder="name">
+
+<button >Add friend</button>
+    
+</form>
+
+<% include partials/footer%>

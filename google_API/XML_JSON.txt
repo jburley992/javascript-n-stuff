@@ -1,0 +1,12 @@
+XML- Similar syntactically to html, but contains information about an object, rather than information about the structure
+of a web page
+
+JSON(Javascript Object Notation) - Syntactically similar to a Javascript Object, but only contains strings of key-value pairs
+
+///JSON
+{
+    "person": {
+        "age" :"21",
+        "name": "jacob"
+    }
+}
