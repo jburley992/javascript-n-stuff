@@ -1,0 +1,46 @@
+Start a server with sudo service mongod start
+//Leave this tab alone, it needs to be running so that we can interact
+// with the database
+
+
+
+
+//In mongodb, we want to use
+	{$set: {object}}, if we want to update, but not completely overwrite the 
+	object
+	
+	To completely overwrite, we just pass in another object
+
+Basic mongoDB commands
+	mongod
+	mongo
+	help
+	show dbs
+	use
+	insert
+	find
+	update
+	remove
+
+
+
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+REST is a pattern for mapping http routes and CRUD operations
+
+CRUD
+-Create
+-Read
+-Update
+-Destroy
+
+RESTFUL routes
+name	url		        verb		    desctiption(examples)
+===========================================================
+Index  /dogs    	    GET			Display a list of all dogs
+New	   /dogs/new        GET			Form to create a new dogs
+Create /dogs		    POST		Add a new dog ot the database
+show   /dogs/:id        GET			Shows more specific info about one dog
+Edit   /dogs/:id/edit   Get			Show edit form for one dog	
+Update /dog/:id         Put			Update a particular dog
+Destroy /dogs/:id       Delete		Delete a  particular dog

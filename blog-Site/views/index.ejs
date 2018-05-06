@@ -1,0 +1,23 @@
+<% include partials/header%>
+
+    <link rel="stylesheet" href="/app.css">
+
+    <h1> This is the blog center</h1>
+
+    <ul>
+        <% blogs.forEach(function(blog){ %>
+        <a href="/blogs/<%= blog._id%>">
+            <div class="container jumbotron">
+                <li>
+                        <h3>
+                            <%= blog.title %>
+                        </h3>
+                        
+                        <img src="<%= blog.img %>" class="thumbnail">
+                </li>
+            </div>
+        </a>
+            <% }) %>
+    </ul>
+
+    <% include partials/footer%>

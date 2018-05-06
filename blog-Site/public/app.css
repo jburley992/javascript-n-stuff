@@ -1,0 +1,23 @@
+h1{
+    color: black;
+    text-align: center;
+    
+}
+
+h3{
+    float: left
+}
+
+img{
+    height: 200px;
+    float: right;
+}
+
+ul{
+    list-style-type: none;
+    text-align: center;
+}
+
+#delete{
+    display: inline;
+}

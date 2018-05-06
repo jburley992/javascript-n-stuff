@@ -1,0 +1,21 @@
+<% include partials/header%>
+
+    <h1>
+        <%=blog.title%>
+    </h1>
+
+    <h2>
+        <%= blog.created%>
+    </h2>
+
+    <img src="<%=blog.img%>" >
+    <h3>
+        <%=blog.body%>
+    </h3>
+
+    <a href="/blogs/<%=blog._id%>/edit" class="btn btn-primary btn-lg"> Edit blog</a>
+    <form action="/blogs/<%=blog._id%>?_method=DELETE" method="POST" id="delete">
+        <button type="submit" class="btn btn-lg btn-dark" >Delete blog</button>
+    </form>
+
+    <% include partials/footer%>
