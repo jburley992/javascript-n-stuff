@@ -4,8 +4,10 @@ var app = express();
 var mongoose = require("mongoose");
 var mo = require("method-override");
 var bp = require("body-parser");
+var expressSanitizer = require("express-sanitizer");
 app.use(express.static("public"));
 app.use(bp.urlencoded({ extended: true} ) );
+app.use(expressSanitizer());
 app.use(mo("_method"));
 mongoose.connect("mongodb://localhost/blogs");
 
@@ -53,6 +55,7 @@ app.get("/blogs", function (req, res) {
 });
 
 app.post("/blogs",function(req,res){
+    req.body.post_body =  req.sanitize(req.body.post_body);
    Blog.create({
        title:req.body.title,
        body:req.body.post_body,
@@ -80,6 +83,7 @@ app.get("/blogs/:id",function(req,res){
 });
 
 app.put("/blogs/:id",function(req,res){
+    req.body.post_body =  req.sanitize(req.body.post_body);
     Blog.findByIdAndUpdate(req.params.id,
         {title:req.body.title,
          body: req.body.post_body,

@@ -21,3 +21,7 @@ ul{
 #delete{
     display: inline;
 }
+
+#body_blog{
+    height: 500px;
+}
